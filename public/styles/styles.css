@@ -195,11 +195,19 @@ main {
     width: 180px !important;
     height: 280px;
     display: block;
-    border: 1px solid #ed1b2f;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin: 8px;
     gap: 10px;
     cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#products-cards img:hover,
+#newsoftheweek img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 #products-cards h3 {
@@ -296,15 +304,15 @@ footer {
         display: block !important;
     }
 
-        .desktop-menu2 {
-            display: flex;
-            flex-direction: column !important;
-            flex-wrap: wrap;
-            overflow: hidden;
-            list-style: none;
-            align-items: center;
-            background-color: #8C201F;
-        }
+    .desktop-menu2 {
+        display: flex;
+        flex-direction: column !important;
+        flex-wrap: wrap;
+        overflow: hidden;
+        list-style: none;
+        align-items: center;
+        background-color: #8C201F;
+    }
 
     main {
         max-width: 100%;
