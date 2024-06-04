@@ -262,7 +262,6 @@ footer {
 @media (max-width: 640px) {
     .desktop-menu {
         display: none;
-        flex-direction: column;
         overflow: hidden;
         width: 100%;
         background-color: #8C201F;
@@ -306,16 +305,17 @@ footer {
 
     .desktop-menu2 {
         display: flex;
-        flex-direction: column !important;
         flex-wrap: wrap;
+        flex-direction: column !important;
         overflow: hidden;
         list-style: none;
         align-items: center;
         background-color: #8C201F;
+        max-width: 100vw;
     }
 
     main {
-        max-width: 100%;
+        max-width: 100vw;
         margin: 20px auto;
         padding: 0 10px;
         overflow: hidden;
