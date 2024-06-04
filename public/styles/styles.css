@@ -19,7 +19,7 @@ header {
     align-items: center;
     padding-bottom: 10px;
     padding-top: 7px;
-    background-image: url(https://github.com/Antariex/Satoshi-Comicbook-Store/blob/main/public/images/bggeneral01.jpg);
+    background-image: url(/public/images/bggeneral01.jpg);
     background-size: cover;
 }
 
@@ -296,15 +296,15 @@ footer {
         display: block !important;
     }
 
-    .desktop-menu2 {
-        display: flex;
-        flex-direction: column !important;
-        flex-wrap: wrap;
-        overflow: hidden;
-        list-style: none;
-        align-items: center;
-        background-color: #8C201F;
-    }
+        .desktop-menu2 {
+            display: flex;
+            flex-direction: column !important;
+            flex-wrap: wrap;
+            overflow: hidden;
+            list-style: none;
+            align-items: center;
+            background-color: #8C201F;
+        }
 
     main {
         max-width: 100%;
