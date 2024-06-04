@@ -14,6 +14,7 @@ header {
     background-color: #E9E9E9;
     color: #fff;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 10px;
@@ -26,8 +27,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vh;
+    width: 100%;
     color: #fff;
+    padding: 19px 0 !important;
 }
 
 .logo img {
@@ -35,14 +37,6 @@ nav {
     height: 130px;
     display: block;
     margin: 0;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 19px 0 !important;
 }
 
 .desktop-menu {
@@ -56,6 +50,8 @@ nav {
 
 .desktop-menu2 {
     display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
     list-style: none;
     align-items: center;
     justify-content: space-around;
@@ -63,7 +59,8 @@ nav {
     background-color: #8C201F;
 }
 
-nav .desktop-menu ul, .footer-menu ul,
+nav .desktop-menu ul,
+.footer-menu ul,
 .desktop-menu2 ul {
     display: flex;
     justify-content: center;
@@ -71,8 +68,9 @@ nav .desktop-menu ul, .footer-menu ul,
 }
 
 nav .desktop-menu li,
-.desktop-menu2 li, .footer-menu li {
-    padding: 10px 20px;
+.desktop-menu2 li,
+.footer-menu li {
+    padding: 8px 16px;
 }
 
 nav .desktop-menu a {
@@ -98,7 +96,8 @@ nav .desktop-menu a:hover {
     border-radius: 12px;
 }
 
-.desktop-menu2 a:hover, .footer-menu a:hover {
+.desktop-menu2 a:hover,
+.footer-menu a:hover {
     color: #e9e509;
 }
 
@@ -108,6 +107,10 @@ main {
     max-width: 90%;
     margin: 20px auto;
     padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-icon img {
@@ -145,10 +148,11 @@ main {
 
 .social {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 24px;
     margin-bottom: 24px;
@@ -175,6 +179,7 @@ main {
 
 #newsoftheweek {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     align-items: center;
     justify-content: center;
@@ -250,6 +255,7 @@ footer {
     .desktop-menu {
         display: none;
         flex-direction: column;
+        overflow: hidden;
         width: 100%;
         background-color: #8C201F;
         position: absolute;
@@ -273,9 +279,15 @@ footer {
         color: #fff;
     }
 
+    nav .desktop-menu a {
+        color: #fff;
+    }
+
     .menu-icon {
         display: block;
         color: #fff;
+        position: absolute;
+        right: 10px;
     }
 
     .menu-icon img {
@@ -283,6 +295,16 @@ footer {
         height: 40px;
         display: block !important;
     }
+
+        .desktop-menu2 {
+            display: flex;
+            flex-direction: column !important;
+            flex-wrap: wrap;
+            overflow: hidden;
+            list-style: none;
+            align-items: center;
+            background-color: #8C201F;
+        }
 
     main {
         max-width: 100%;
