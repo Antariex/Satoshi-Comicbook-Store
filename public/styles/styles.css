@@ -305,7 +305,6 @@ footer {
 
     .desktop-menu2 {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column !important;
         overflow: hidden;
         list-style: none;
