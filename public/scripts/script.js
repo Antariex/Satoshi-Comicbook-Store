@@ -56,7 +56,7 @@ const products = [
   },
   {
     name: "Dune 1",
-    type: "novels",
+    type: "books",
     imageUrl: "./public/images/dune.jpg",
   },
   {
@@ -71,7 +71,7 @@ const products = [
   },
   {
     name: "Dune 2",
-    type: "novels",
+    type: "books",
     imageUrl: "./public/images/dune2.jpg",
   },
   {
@@ -133,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const comicsButton = document.getElementById("comics");
   const mangaButton = document.getElementById("manga");
   const novelsButton = document.getElementById("novels");
+  const booksButton = document.getElementById("books");
   const figuresButton = document.getElementById("figures");
   const merchandisingButton = document.getElementById("merchandising");
 
@@ -170,6 +171,9 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   novelsButton.addEventListener("click", () =>
     displayProducts(filterProducts("novels"))
+  );
+  booksButton.addEventListener("click", () =>
+    displayProducts(filterProducts("books"))
   );
   figuresButton.addEventListener("click", () =>
     displayProducts(filterProducts("figures"))
