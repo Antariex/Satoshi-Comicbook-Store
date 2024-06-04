@@ -30,14 +30,14 @@ const products = [
     imageUrl: "./public/images/slamdunk01.jpg",
   },
   {
+    name: "Flashpoint Beyond",
+    type: "comics",
+    imageUrl: "./public/images/flashpointbeyond.webp",
+  },
+  {
     name: "Card Captor Sakura",
     type: "manga",
     imageUrl: "./public/images/cardcaptorsakura1.jpg",
-  },
-  {
-    name: "20th Century Boys",
-    type: "manga",
-    imageUrl: "./public/images/20thcenturyboys_01.jpg",
   },
   {
     name: "Doomsday Clock",
@@ -45,14 +45,9 @@ const products = [
     imageUrl: "./public/images/doomsdayclock.webp",
   },
   {
-    name: "Flashpoint Beyond",
-    type: "comics",
-    imageUrl: "./public/images/flashpointbeyond.webp",
-  },
-  {
-    name: "Naruto The Last",
-    type: "novels",
-    imageUrl: "./public/images/narutothelast.webp",
+    name: "20th Century Boys",
+    type: "manga",
+    imageUrl: "./public/images/20thcenturyboys_01.jpg",
   },
   {
     name: "Dune 1",
@@ -60,9 +55,14 @@ const products = [
     imageUrl: "./public/images/dune.webp",
   },
   {
-    name: "Saint Seiya Shun",
+    name: "Godzilla",
     type: "figures",
-    imageUrl: "./public/images/andromeda.jpg",
+    imageUrl: "./public/images/godzilla.jpg",
+  },
+  {
+    name: "Naruto The Last",
+    type: "novels",
+    imageUrl: "./public/images/narutothelast.jpg",
   },
   {
     name: "Star Wars L3-37",
@@ -70,14 +70,9 @@ const products = [
     imageUrl: "./public/images/starwars.jpg",
   },
   {
-    name: "Dune 2",
-    type: "novels",
-    imageUrl: "./public/images/dune2.jpg",
-  },
-  {
-    name: "Tokyo Revengers",
-    type: "manga",
-    imageUrl: "./public/images/tokyorevengers25.jpg",
+    name: "Mister Miracle",
+    type: "comics",
+    imageUrl: "./public/images/mrmiracle.webp",
   },
   {
     name: "Iron Man Keychain",
@@ -85,14 +80,24 @@ const products = [
     imageUrl: "./public/images/ironman.webp",
   },
   {
+    name: "Tokyo Revengers",
+    type: "manga",
+    imageUrl: "./public/images/tokyorevengers25.jpg",
+  },
+  {
     name: "Spider Man Wallet",
     type: "merchandising",
     imageUrl: "./public/images/spiderman.webp",
   },
   {
-    name: "Mr Miracle",
-    type: "comics",
-    imageUrl: "./public/images/mrmiracle.webp",
+    name: "Dune 2",
+    type: "novels",
+    imageUrl: "./public/images/dune2.jpg",
+  },
+  {
+    name: "Saint Seiya Shun",
+    type: "figures",
+    imageUrl: "./public/images/andromeda.jpg",
   },
 ];
 
