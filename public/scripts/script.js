@@ -121,11 +121,16 @@ lastModifiedElement.textContent = `Last Modified: ${formattedLastModified}`;
 
 document.addEventListener("DOMContentLoaded", function () {
   const menuIcon = document.querySelector(".menu-icon");
+  const hamburgerIcon = document.getElementById("hamburger-icon");
+  const closeIcon = document.getElementById("close-icon");
   const desktopMenu = document.querySelector(".desktop-menu");
 
   menuIcon.addEventListener("click", function () {
     const isMenuVisible = desktopMenu.style.display === "flex";
+
     desktopMenu.style.display = isMenuVisible ? "none" : "flex";
+    hamburgerIcon.style.display = isMenuVisible ? "block" : "none";
+    closeIcon.style.display = isMenuVisible ? "none" : "block";
   });
 
   const productsCardsContainer = document.getElementById("products-cards");

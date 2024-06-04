@@ -246,49 +246,64 @@ footer {
 
 
 /* Responsive Styles */
-@media (max-width: 767px) {
+@media (max-width: 640px) {
     .desktop-menu {
         display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #8C201F;
+        position: absolute;
+        top: 146px;
+        left: 0;
+        text-align: center;
+        transition: all 0.3s ease-out;
+    }
+
+    .desktop-menu ul {
+        flex-direction: column;
+    }
+
+    .desktop-menu li {
+        padding: 10px;
+    }
+
+    .desktop-menu a {
+        display: block;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .menu-icon {
+        display: block;
+        color: #fff;
     }
 
     .menu-icon img {
+        max-width: 40px;
+        height: 40px;
         display: block !important;
     }
 
     main {
         max-width: 100%;
+        margin: 20px auto;
         padding: 0 10px;
+        overflow: hidden;
+    }
+
+    .logo {
+        flex-grow: 1;
     }
 
     .image-section {
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0px;
     }
 
     .image-container img {
-        max-width: 100%;
-    }
-
-    .strong {
-        max-width: 100%;
-        font-size: 28px !important;
-    }
-
-    .social {
-        width: 100%;
-        flex-wrap: wrap;
-        padding: 16px;
-    }
-
-    #newsoftheweek {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #products-cards img,
-    #newsoftheweek img {
-        width: 120px !important;
-        height: 180px;
+        max-width: 250px;
     }
 }
