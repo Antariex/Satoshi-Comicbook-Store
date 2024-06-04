@@ -94,11 +94,6 @@ const products = [
     type: "comics",
     imageUrl: "./public/images/mrmiracle.webp",
   },
-  {
-    name: "JNG board game",
-    type: "games",
-    imageUrl: "./public/images/jng.webp",
-  },
 ];
 
 const copyYearElement = document.getElementById("currentyear");
@@ -141,7 +136,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const booksButton = document.getElementById("books");
   const figuresButton = document.getElementById("figures");
   const merchandisingButton = document.getElementById("merchandising");
-  const gamesButton = document.getElementById("games");
 
   function displayProducts(filteredProducts) {
     productsCardsContainer.innerHTML = "";
@@ -186,9 +180,6 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   merchandisingButton.addEventListener("click", () =>
     displayProducts(filterProducts("merchandising"))
-  );
-  gamesButton.addEventListener("click", () =>
-    displayProducts(filterProducts("games"))
   );
 
   displayProducts(products);
