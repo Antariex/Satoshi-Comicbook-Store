@@ -19,7 +19,7 @@ header {
     align-items: center;
     padding-bottom: 10px;
     padding-top: 7px;
-    background-image: url(/public/images/bggeneral01.jpg);
+    background-image: url(./public/images/bggeneral01.jpg);
     background-size: cover;
 }
 
