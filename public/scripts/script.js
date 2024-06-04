@@ -57,7 +57,7 @@ const products = [
   {
     name: "Dune 1",
     type: "novels",
-    imageUrl: "./public/images/dune.jpg",
+    imageUrl: "./public/images/dune.webp",
   },
   {
     name: "Saint Seiya Shun",
